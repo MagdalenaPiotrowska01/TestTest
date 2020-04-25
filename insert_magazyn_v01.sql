@@ -77,13 +77,13 @@ INSERT INTO
 	ID_Element_Typ,Element_Nazwa,
 	Okres_Przydatnosci_Miesiace,Element_Ilosc_W_Paczce,ID_Jednostka)
 VALUES
-	(1,'£o¿ysko',24,1,2),
-	(2,'Bawe³na',48,100,1),
-	(3,'Bawe³na',48,1000,4),
-	(4,'Okr¹g³e',0,100,5),
+	(1,'Â£oÂ¿ysko',24,1,2),
+	(2,'BaweÂ³na',48,100,1),
+	(3,'BaweÂ³na',48,1000,4),
+	(4,'OkrÂ¹gÂ³e',0,100,5),
 	(5,'Tektura falista',0,100,2),
 	(1,'Sruba',0,10,3),
-	(1,'Bêbenek',48,1,2),
+	(1,'BÃªbenek',48,1,2),
 	(1,'Igla do dzianin',0,10,2),
 	(1,'Kolo pasowe',0,5,2)
 INSERT INTO 
@@ -119,7 +119,24 @@ VALUES
 	(''),
 	(''),
 	('')
+
 */
+INSERT INTO Koszt_jednostkowy(ID_element, Koszt_produkcji) 
+VALUES 
+(1,20),
+(2,50),
+(3,5),
+(4,18),
+(5,21)
+
+INSERT INTO Zamowienie_produkt(ID_Zamowienia,ID_element, Ilosc) 
+VALUES 
+(1,3,20),
+(5,4,100),
+(2,2,10),
+(4,1,2000),
+(4,1,200);
+
 /*sample code
 USE Baza_szwalnia
 SELECT * FROM 
