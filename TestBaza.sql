@@ -10,7 +10,7 @@ CREATE TABLE Rodzaj_Etapu
 (ID_Etapu int PRIMARY KEY NOT NULL,
 Nazwa char(30) NOT NULL);
 
-----------------------------------Finanse i Zarz¹dzanie---------------------------------------------------
+----------------------------------Finanse i ZarzÂ¹dzanie---------------------------------------------------
 
 CREATE TABLE Klienci (
 	ID_Klienta int IDENTITY(1,1) PRIMARY KEY,
@@ -120,7 +120,7 @@ CREATE TABLE Faktury_Zewnetrzne (
 ---------------------------------------Koniec ---------------------------------------------------------
 
 ---------------------------------------------------------POCZATEK MAGAZYN---------------------------------------------------------
---Magazyn tabele s³ownikowe
+--Magazyn tabele sÂ³ownikowe
 
 CREATE TABLE Polki_Rozmiary (
 ID_Rozmiar_Polki int IDENTITY(1,1) PRIMARY KEY,
@@ -211,7 +211,6 @@ ID_Dostawcy int
 	FOREIGN KEY REFERENCES  
 	Dostawcy_Zaopatrzenie(ID_Dostawcy),
 Cena_Jedn money,
-Cena money,
 Data_Oferty char(10),
 Ilosc_Minimalna int,
 Ilosc_Maksymalna int,
@@ -333,7 +332,7 @@ CREATE TABLE Zamowienie_Produkt (
 ---------------------------------------------------------KONIEC MAGAZYN---------------------------------------------------------
 
 
----------------------- Pocz¹tek Przygotowanie produkcji-------------------------
+---------------------- PoczÂ¹tek Przygotowanie produkcji-------------------------
 
 create table Czesci_Obsluga (
 	ID_Obslugi  int IDENTITY(1,1) not null PRIMARY KEY,
